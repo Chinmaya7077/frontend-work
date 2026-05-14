@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MexLot - Premium HDPE Pipes & Fittings Manufacturer in South India" />
+  <title>MexLot — Premium HDPE Pipes & Coils for Modern Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       STICKY HEADER (above the navbar) — appears after first fold,
+       hides on scroll-up. Contains compact product summary + CTA.
+       ========================================================= -->
+  <div class="sticky-header" id="stickyHeader" aria-hidden="true">
+    <div class="container sticky-header__inner">
+      <div class="sticky-header__product">
+        <img src="https://picsum.photos/seed/pipe1/120/120" alt="" class="sticky-header__thumb" />
+        <div class="sticky-header__meta">
+          <p class="sticky-header__title">Premium HDPE Pipes &amp; Coils</p>
+          <p class="sticky-header__price">₹4,80,000 – 1,80,000 <span>/ MT</span></p>
+        </div>
+      </div>
+      <div class="sticky-header__actions">
+        <a href="#specs" class="btn btn--ghost">View Technical Specs</a>
+        <a href="#quote" class="btn btn--primary">Get Instant Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       TOP UTILITY BAR
+       ========================================================= -->
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <span>Free shipping on orders above ₹5,00,000 across South India</span>
+      <span class="utility-bar__contact">+91 98765 43210 &nbsp;·&nbsp; sales@mexlot.in</span>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MAIN NAVIGATION
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="logo" aria-label="MexLot home">
+        <span class="logo__mark">M</span>
+        <span class="logo__name">MexLot</span>
+      </a>
+
+      <nav class="navbar__menu" aria-label="Primary">
+        <a href="#products" class="navbar__link">Products <span class="caret">▾</span></a>
+        <a href="#solutions" class="navbar__link">Solutions <span class="caret">▾</span></a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#resources" class="navbar__link">Resources</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__cta">
+        <a href="#quote" class="btn btn--primary">Get a Quote</a>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         HERO / PRODUCT DETAIL (carousel + info)
+         ========================================================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="#">Home</a>
+          <span>›</span>
+          <a href="#">HDPE Pipes</a>
+          <span>›</span>
+          <span aria-current="page">Premium HDPE Pipes &amp; Coils</span>
+        </nav>
+
+        <div class="hero__grid">
+
+          <!-- IMAGE CAROUSEL WITH HOVER ZOOM -->
+          <div class="carousel" id="carousel">
+            <div class="carousel__stage" id="carouselStage">
+              <div class="carousel__badges">
+                <span class="badge badge--green">✓ ISI Certified</span>
+                <span class="badge badge--blue">In Stock</span>
+              </div>
+
+              <button class="carousel__arrow carousel__arrow--prev" id="prevBtn" aria-label="Previous image">‹</button>
+
+              <div class="carousel__main" id="carouselMain">
+                <img id="mainImage"
+                     src="https://picsum.photos/seed/pipe1/1200/960"
+                     alt="HDPE Pipe — main view"
+                     class="carousel__image is-active"
+                     data-zoom="https://picsum.photos/seed/pipe1/1800/1440" />
+                <!-- Zoom lens follows cursor inside the stage -->
+                <div class="zoom-lens" id="zoomLens" aria-hidden="true"></div>
+              </div>
+
+              <button class="carousel__arrow carousel__arrow--next" id="nextBtn" aria-label="Next image">›</button>
+            </div>
+
+            <!-- Zoom preview pane — rendered outside the clipped stage so it can overflow. -->
+            <div class="zoom-result" id="zoomResult" aria-hidden="true"></div>
+
+            <!-- THUMBNAIL STRIP -->
+            <ul class="carousel__thumbs" id="thumbs" role="tablist">
+              <li><button class="thumb is-active" data-src="https://picsum.photos/seed/pipe1/1200/960" data-zoom="https://picsum.photos/seed/pipe1/1800/1440" aria-label="View 1"><img src="https://picsum.photos/seed/pipe1/200/200" alt="" /></button></li>
+              <li><button class="thumb" data-src="https://picsum.photos/seed/pipe2/1200/960" data-zoom="https://picsum.photos/seed/pipe2/1800/1440" aria-label="View 2"><img src="https://picsum.photos/seed/pipe2/200/200" alt="" /></button></li>
+              <li><button class="thumb" data-src="https://picsum.photos/seed/pipe3/1200/960" data-zoom="https://picsum.photos/seed/pipe3/1800/1440" aria-label="View 3"><img src="https://picsum.photos/seed/pipe3/200/200" alt="" /></button></li>
+              <li><button class="thumb" data-src="https://picsum.photos/seed/pipe4/1200/960" data-zoom="https://picsum.photos/seed/pipe4/1800/1440" aria-label="View 4"><img src="https://picsum.photos/seed/pipe4/200/200" alt="" /></button></li>
+              <li><button class="thumb" data-src="https://picsum.photos/seed/pipe5/1200/960" data-zoom="https://picsum.photos/seed/pipe5/1800/1440" aria-label="View 5"><img src="https://picsum.photos/seed/pipe5/200/200" alt="" /></button></li>
+            </ul>
+          </div>
+
+          <!-- PRODUCT INFO -->
+          <div class="product-info">
+            <div class="product-info__tags">
+              <span class="tag"><span class="tag__dot tag__dot--green"></span> Made in India</span>
+              <span class="tag"><span class="tag__dot tag__dot--orange"></span> ISO 9001:2015</span>
+            </div>
+
+            <h1 class="product-info__title">
+              Premium HDPE Pipes
+              <span class="amp">&amp;</span> Coils for
+              <span class="accent">Modern Infrastructure</span>
+            </h1>
+
+            <ul class="product-info__features">
+              <li>✓ Made-in-India approval</li>
+              <li>✓ Corrosion &amp; chemical resistance</li>
+              <li>✓ 50+ year service life</li>
+              <li>✓ Flexible installation</li>
+              <li>✓ Recyclable &amp; eco-friendly</li>
+            </ul>
+
+            <div class="product-info__pricebox">
+              <p class="price-label">Price Range</p>
+              <p class="price">₹4,80,000 – 1,80,000 <span class="price__unit">/ MT</span></p>
+              <p class="price-note">Starting at ₹4,80,000 · Volume discounts available</p>
+              <p class="price-vol">Minimum order quantity: 5 MT</p>
+            </div>
+
+            <div class="product-info__actions">
+              <a href="#quote" class="btn btn--primary btn--lg">Get Instant Quote</a>
+              <a href="#specs" class="btn btn--outline btn--lg">View Technical Specs ↓</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         BRAND LOGO MARQUEE
+         ========================================================= -->
+    <section class="brand-strip" aria-label="Trusted partners">
+      <div class="brand-strip__track">
+        <!-- duplicated for seamless marquee -->
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+        <span class="brand-strip__logo">EUROFLEX</span>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TECHNICAL SPECIFICATIONS — dark section with table
+         ========================================================= -->
+    <section class="specs" id="specs">
+      <div class="container">
+        <h2 class="section-title section-title--light">
+          <span class="accent-pill">Technical Specifications</span> at a Glance
+        </h2>
+        <p class="section-sub section-sub--light">Comprehensive performance data demonstrating our commitment to quality and engineering excellence.</p>
+
+        <div class="specs__table">
+          <div class="specs__row specs__row--head">
+            <div>Parameter</div>
+            <div>Specification</div>
+          </div>
+          <div class="specs__row"><div>Pipe Diameter Range</div><div>20mm to 800mm (DN 20 to DN 800)</div></div>
+          <div class="specs__row"><div>Pressure Ratings</div><div>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</div></div>
+          <div class="specs__row"><div>Standard Dimension Ratios</div><div>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</div></div>
+          <div class="specs__row"><div>Operating Temperature</div><div>-40°C to +60°C (-40°F to +140°F)</div></div>
+          <div class="specs__row"><div>Tensile Strength</div><div>≥ 21 MPa</div></div>
+          <div class="specs__row"><div>Material Density</div><div>0.94 – 0.97 g/cm³</div></div>
+          <div class="specs__row"><div>Certification Standards</div><div>IS 4984, ISO 4427, EN 12201, ASTM D3035</div></div>
+          <div class="specs__row"><div>Joint Type</div><div>Butt Fusion, Electrofusion, Mechanical</div></div>
+          <div class="specs__row"><div>Coil Lengths</div><div>50m / 100m / 150m / 200m (custom on request)</div></div>
+          <div class="specs__row"><div>Colour of Stripe</div><div>Blue (water), Yellow (gas), Black (general)</div></div>
+        </div>
+
+        <div class="specs__cta">
+          <a href="#" class="btn btn--ghost btn--ghost-light">↓ Download Full Technical Datasheet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         BUILT TO LAST — feature grid
+         ========================================================= -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Built to Last. <span class="accent">Engineered to Perform.</span></h2>
+        <p class="section-sub">From large industrial backbones to last-mile distribution networks, MexLot pipes are engineered to deliver decades of reliable, leak-free service.</p>
+
+        <div class="features__grid">
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Superior Chemical Resistance</h3>
+            <p>Engineered HDPE composition withstands acids, alkalis, and aggressive industrial fluids — ideal for chemical conveyance applications.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v6h-6"/></svg></div>
+            <h3>Exceptional Flexibility &amp; Durability</h3>
+            <p>High elongation at break and superior impact strength allow installation in challenging terrain without compromising integrity.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></div>
+            <h3>Leak-Proof Fusion Welding</h3>
+            <p>Butt-fusion and electrofusion jointing create monolithic, leak-proof pipelines stronger than the pipe itself.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Cost-Effective Long-Term Solution</h3>
+            <p>Lower total cost of ownership through 50+ year service life, minimal maintenance, and energy-efficient flow characteristics.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-2 1-3.9 3-5.5s3.5-4 4-6.5c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a7 7 0 0 1-7 7z"/><path d="M12 20v-7"/></svg></div>
+            <h3>Environmentally Sustainable</h3>
+            <p>100% recyclable, lower carbon footprint than metal alternatives, and free of toxic leaching for safe potable water.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>Certified Quality Assurance</h3>
+            <p>ISO 9001:2015 certified manufacturing with batch-level traceability and adherence to global piping standards.</p>
+          </article>
+        </div>
+
+        <div class="features__cta">
+          <a href="#quote" class="btn btn--primary">Request a Sample</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FREQUENTLY ASKED QUESTIONS
+         ========================================================= -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq__list">
+          <details class="faq__item" open>
+            <summary>What is the purpose of a layer code for HDPE Pipes?</summary>
+            <p>The colour-coded layer indicates the intended application. Blue stripes denote potable water, yellow for natural gas distribution, and black for general industrial conveyance — ensuring instant identification on-site and during maintenance.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What are the benefits of using premium-rated pipe manufacturing?</summary>
+            <p>Premium-rated manufacturing guarantees tight dimensional tolerances, consistent wall thickness, validated pressure ratings, and traceable raw-material sourcing — directly translating to longer service life and fewer site failures.</p>
+          </details>
+          <details class="faq__item">
+            <summary>How is sustainability ensured during production?</summary>
+            <p>Our facility runs on a closed-loop water system, sources virgin HDPE resin from certified suppliers, and recycles 100% of in-process scrap — minimising environmental impact at every step.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What are the common applications of premium piping?</summary>
+            <p>Municipal water supply, irrigation, gas distribution, mining slurry transport, telecom ducting, industrial chemical conveyance, and trenchless infrastructure renewal.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Can dimensions be modified to match my project?</summary>
+            <p>Yes — within our standard range we offer custom diameters, wall thicknesses, coil lengths, and colour-stripe combinations. Minimum order quantities apply.</p>
+          </details>
+        </div>
+
+        <div class="faq__callout">
+          <div>
+            <h3>Want to email the entire catalogue?</h3>
+            <p>Enter your work email and we'll send the latest MexLot catalogue and price list.</p>
+          </div>
+          <form class="faq__form" onsubmit="event.preventDefault(); alert('Catalogue request received!');">
+            <input type="email" placeholder="you@company.com" required aria-label="Work email" />
+            <button class="btn btn--primary">Request Catalogue</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VERSATILE APPLICATIONS — horizontal scrolling cards
+         ========================================================= -->
+    <section class="applications" id="applications">
+      <div class="container">
+        <div class="applications__head">
+          <div>
+            <h2 class="section-title">Versatile Applications Across Industries</h2>
+            <p class="section-sub">From municipal water to packaging extrusion, our precision-engineered machinery delivers superior performance across diverse applications.</p>
+          </div>
+          <div class="applications__nav">
+            <button class="round-btn" id="appsPrev" aria-label="Scroll left">‹</button>
+            <button class="round-btn" id="appsNext" aria-label="Scroll right">›</button>
+          </div>
+        </div>
+
+        <div class="applications__row" id="appsRow">
+          <article class="app-card">
+            <img src="https://picsum.photos/seed/cement/600/450" alt="Cement Manufacturing" />
+            <div class="app-card__body">
+              <h3>Cement Manufacturing</h3>
+              <p>Heavy-duty conveying of slurries and abrasive materials in continuous cement processing.</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <img src="https://picsum.photos/seed/polymer/600/450" alt="Polymer Manufacturing" />
+            <div class="app-card__body">
+              <h3>Polymer Manufacturing</h3>
+              <p>Chemical-resistant pipelines for petrochemical and polymer-processing facilities.</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <img src="https://picsum.photos/seed/textile/600/450" alt="Textile Manufacturing" />
+            <div class="app-card__body">
+              <h3>Textile Manufacturing</h3>
+              <p>Dye-house effluent transport and process-water distribution in textile mills.</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <img src="https://picsum.photos/seed/water/600/450" alt="Municipal Water" />
+            <div class="app-card__body">
+              <h3>Municipal Water Supply</h3>
+              <p>Long-life potable water distribution networks with ISI-certified compliance.</p>
+            </div>
+          </article>
+          <article class="app-card">
+            <img src="https://picsum.photos/seed/agri/600/450" alt="Agriculture" />
+            <div class="app-card__body">
+              <h3>Irrigation &amp; Agriculture</h3>
+              <p>UV-stabilised piping for drip, sprinkler, and large-scale agricultural irrigation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ADVANCED HDPE PIPE MANUFACTURING PROCESS — tabs
+         ========================================================= -->
+    <section class="process" id="process">
+      <div class="container">
+        <h2 class="section-title">Advanced HDPE Pipe Manufacturing <span class="accent">Process</span></h2>
+        <p class="section-sub">Our state-of-the-art extrusion lines combine premium-grade resin, advanced controls, and stringent quality protocols at every step.</p>
+
+        <div class="process__card">
+          <div class="process__tabs" role="tablist">
+            <button class="process__tab is-active" data-tab="0">Raw Material</button>
+            <button class="process__tab" data-tab="1">Extrusion</button>
+            <button class="process__tab" data-tab="2">Cooling</button>
+            <button class="process__tab" data-tab="3">Cutting</button>
+            <button class="process__tab" data-tab="4">Testing</button>
+            <button class="process__tab" data-tab="5">Coiling</button>
+          </div>
+
+          <div class="process__body">
+            <div class="process__info" id="processInfo">
+              <h3 id="processTitle">High-Grade Raw Material Selection</h3>
+              <p id="processDesc">We source only premium-grade virgin HDPE resin compliant with international quality and density standards. Each batch undergoes rigorous MFI, density, and carbon-content verification before entering production.</p>
+              <ul>
+                <li>✓ PE100 grade resin</li>
+                <li>✓ Carbon-black UV stabilisation</li>
+                <li>✓ Batch-level certificate of analysis</li>
+              </ul>
+            </div>
+            <div class="process__image">
+              <img id="processImage" src="https://picsum.photos/seed/process1/900/540" alt="Manufacturing process" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TRUSTED PERFORMANCE — testimonials
+         ========================================================= -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Trusted Performance. Proven Results.</h2>
+        <p class="section-sub">From innovative pan-India Distributors to specialised dye-setting machinery, we deliver complete solutions for modern textile manufacturing.</p>
+
+        <div class="testimonials__grid">
+          <article class="testimonial">
+            <div class="testimonial__quote">"</div>
+            <p>"Excellent support for specialised applications — MexLot has been instrumental in scaling our irrigation network across three states without a single field failure."</p>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/64?img=11" alt="" />
+              <div>
+                <p class="testimonial__name">Suresh Iyer</p>
+                <p class="testimonial__role">Head of Procurement, AgriCorp Ltd.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial__quote">"</div>
+            <p>"Provides the exact specs we need — diameters, pressure ratings, and certification documentation arrive on time, every time."</p>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/64?img=12" alt="" />
+              <div>
+                <p class="testimonial__name">Anita Rao</p>
+                <p class="testimonial__role">Project Director, Urban Infra</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <div class="testimonial__quote">"</div>
+            <p>"Excellent support for specialised applications. The technical team helped us validate fusion welding for a 600mm slurry line — flawless commissioning."</p>
+            <div class="testimonial__author">
+              <img src="https://i.pravatar.cc/64?img=13" alt="" />
+              <div>
+                <p class="testimonial__name">Rajesh Verma</p>
+                <p class="testimonial__role">Plant Engineer, MineWorks</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         COMPLETE PIPING SOLUTIONS PORTFOLIO
+         ========================================================= -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Complete Piping Solutions Portfolio</h2>
+        <p class="section-sub">Beyond HDPE pipes, MexLot is a complete partner — fittings, fusion services, installation, and after-sales support.</p>
+
+        <div class="portfolio__grid">
+          <article class="portfolio-card">
+            <img src="https://picsum.photos/seed/portfolio1/700/420" alt="" />
+            <div class="portfolio-card__body">
+              <h3>HDPE Fittings &amp; Accessories</h3>
+              <p>Complete range of injection-moulded and fabricated fittings — elbows, tees, reducers, flanges, and end-caps for full system integration.</p>
+              <a href="#" class="link-arrow">Learn More →</a>
+            </div>
+          </article>
+          <article class="portfolio-card">
+            <img src="https://picsum.photos/seed/portfolio2/700/420" alt="" />
+            <div class="portfolio-card__body">
+              <h3>Professional Installation Services</h3>
+              <p>Certified installation crews offering butt-fusion, electrofusion, and trenchless deployment with on-site QA documentation.</p>
+              <a href="#" class="link-arrow">Learn More →</a>
+            </div>
+          </article>
+          <article class="portfolio-card">
+            <img src="https://picsum.photos/seed/portfolio3/700/420" alt="" />
+            <div class="portfolio-card__body">
+              <h3>PE-RT Heating Pipes</h3>
+              <p>PE-RT pipes engineered for hot-water and underfloor heating with high temperature resistance and long-term stability.</p>
+              <a href="#" class="link-arrow">Learn More →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio__callout">
+          <p>Didn't find what you're looking for?</p>
+          <a href="#contact" class="btn btn--primary-dark">Talk to an Expert</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RESOURCES & DOWNLOADS
+         ========================================================= -->
+    <section class="resources" id="resources">
+      <div class="container">
+        <h2 class="section-title">Resources &amp; Downloads</h2>
+        <p class="section-sub">Get all the technical documentation and resources you need to make informed decisions about our HDPE piping solutions.</p>
+
+        <ul class="resources__list">
+          <li>
+            <span>HDPE Pipe Installation Manual (PDF)</span>
+            <a href="#" class="link-arrow">↓ Download PDF</a>
+          </li>
+          <li>
+            <span>Maintenance &amp; Inspection Handbook (PDF)</span>
+            <a href="#" class="link-arrow">↓ Download PDF</a>
+          </li>
+          <li>
+            <span>Engineering Specifications Sheet (PDF)</span>
+            <a href="#" class="link-arrow">↓ Download PDF</a>
+          </li>
+          <li>
+            <span>Fusion Welding Procedure Guide (PDF)</span>
+            <a href="#" class="link-arrow">↓ Download PDF</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CTA — Ready to transform
+         ========================================================= -->
+    <section class="cta" id="quote">
+      <div class="container cta__inner">
+        <div class="cta__copy">
+          <h2>Ready to Transform Your <br />Textile Manufacturing?</h2>
+          <p>Get a personalised consultation. Our experts will help you specify, source, and install the right HDPE solution for your project — anywhere in South India.</p>
+          <ul class="cta__points">
+            <li><strong>+91 98765 43210</strong></li>
+            <li>sales@mexlot.in</li>
+            <li>Bengaluru · Chennai · Hyderabad · Cochin</li>
+          </ul>
+        </div>
+
+        <form class="cta__form" onsubmit="event.preventDefault(); alert('Thanks! Our team will contact you within 24 hours.');">
+          <h3>Contact Us Today</h3>
+          <label>
+            <span>Full Name</span>
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Work Email</span>
+            <input type="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" placeholder="+91 ..." />
+          </label>
+          <label>
+            <span>Requirement</span>
+            <textarea rows="3" placeholder="Brief on diameter, pressure rating, qty…"></textarea>
+          </label>
+          <button class="btn btn--dark btn--block">Request Expert Consultation</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--light">
+          <span class="logo__mark">M</span>
+          <span class="logo__name">MexLot</span>
+        </a>
+        <p class="footer__tagline">Premium HDPE Pipes &amp; Fittings Manufacturer in <strong>South India</strong>.</p>
+        <p class="footer__social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Manufacturing</a>
+          <a href="#">Certifications</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <a href="#">HDPE Pipes</a>
+          <a href="#">PE-RT Pipes</a>
+          <a href="#">Fittings</a>
+          <a href="#">Coils</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#">Datasheets</a>
+          <a href="#">Installation Manual</a>
+          <a href="#">Case Studies</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:sales@mexlot.in">sales@mexlot.in</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <a href="#">Bengaluru HQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2026 MexLot Pipes Pvt. Ltd. All rights reserved.</span>
+        <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
